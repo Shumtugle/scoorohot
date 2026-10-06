@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scoorohot'78</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #141b2a; --panel: #1c2438; --ink: #f2e8d4; --dim: #9aa3b8; --gold: #f2b450; --edge: #2c3650; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.55 ui-monospace, Menlo, Consolas, monospace; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; }
+  img { image-rendering: pixelated; image-rendering: crisp-edges; }
+  header { display: flex; gap: 20px; align-items: center; }
+  header img { width: 96px; height: 96px; }
+  h1 { margin: 0; font-size: 34px; color: var(--gold); letter-spacing: 1px; }
+  .tag { margin: 4px 0 0; color: var(--dim); }
+  .live { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; margin: 36px 0; }
+  .screen { border: 3px solid var(--edge); border-radius: 18px; padding: 10px; background: #0b0f18; }
+  .screen img { display: block; width: 300px; height: 450px; }
+  h2 { color: var(--gold); font-size: 18px; margin: 40px 0 12px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .gallery img { width: 100%; border: 2px solid var(--edge); border-radius: 8px; display: block; }
+  .get { background: var(--panel); border: 2px solid var(--edge); border-radius: 10px; padding: 14px 18px; }
+  footer { margin-top: 48px; color: var(--dim); font-size: 13px; }
+  @media (max-width: 640px) { .live { grid-template-columns: 1fr; justify-items: center; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon-large.png" alt="">
+    <div>
+      <h1>SCOOROHOT'78</h1>
+      <p class="tag">A new road every ride.</p>
+    </div>
+  </header>
+
+  <section class="live">
+    <div class="screen"><img src="preview.gif" alt="The road at dusk, as the game draws it"></div>
+    <div>
+      <p>A retro racing game for Android. The road is built just ahead of you as
+      you drive, so it never ends and is never the same twice.</p>
+      <p>Everything you see and hear is made by the game itself: the road, the
+      cars, the countryside, the engine note. No images, no recordings.</p>
+      <p>Put a finger on the screen and the car drives. Slide to steer. Drag
+      down to brake.</p>
+    </div>
+  </section>
+
+  <h2>On the road</h2>
+  <ul>
+    <li>Seven countries blending into one another, from the coast to the taiga.</li>
+    <li>Traffic both ways, forks with signs, crossroads with lights.</li>
+    <li>Day and night, seasons, rain, snow and fog.</li>
+    <li>Fuel, gas stations, and a change of cars at the pumps.</li>
+    <li>Police chases. A saucer. Black holes. A wave.</li>
+    <li>Rallies against the clock, kept and repeatable on the same road.</li>
+  </ul>
+
+  <h2>Pictures</h2>
+  <div class="gallery">
+    <img src="screens/1_menu.png" alt="The menu">
+    <img src="screens/2_coast.png" alt="The coast by day">
+    <img src="screens/3_night.png" alt="A town at night">
+    <img src="screens/4_black_hole.png" alt="A black hole over the desert road">
+    <img src="screens/5_space.png" alt="The rabbit hole among the stars">
+    <img src="screens/6_flood.png" alt="The drowned city">
+  </div>
+
+  <h2>Get it</h2>
+  <p class="get">The APK is attached to each release of this repository.
+  Android 8.0 or newer. Free, no ads, nothing collected.</p>
+
+  <footer>Released under 0BSD.</footer>
+</main>
+</body>
+</html>
